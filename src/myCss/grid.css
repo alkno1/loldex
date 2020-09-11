@@ -1,0 +1,42 @@
+/******************** HEADER ***********************/
+
+.grid-header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "content content"
+    "content content";
+}
+
+.grid-header-searchbar {
+  justify-self: end;
+  align-self: center;
+  grid-area: content;
+}
+
+.grid-border {
+  border: 1px solid greenyellow;
+}
+
+.grid-header-badge-group {
+  justify-self: left;
+  align-self: center;
+  grid-area: content;
+}
+
+/********************* Cards Area *********************/
+
+.grid-outerCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 285px);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+/********************* Cards *********************/
+
+.grid-card-title {
+  display: grid;
+  grid-template-columns: fit-content(150px) auto;
+}

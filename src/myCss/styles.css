@@ -1,0 +1,60 @@
+/* Colors 
+
+header background color: rgba(31, 40, 50, 1)
+cardsArea background color: rgba(100, 116, 135, 0.92)
+
+*/
+
+body {
+  background-color: rgba(100, 116, 135);
+}
+
+.ChangeCursorToPointer:hover {
+  cursor: pointer;
+}
+
+/******************** HEADER ***********************/
+
+.searchbarLength {
+  width: 18rem;
+}
+
+.searchbarAlignment {
+  align-content: right;
+  margin-top: 15px; /*Might need fixing!*/
+}
+
+.headerbg {
+  background-color: rgba(31, 40, 50, 1);
+  height: 50px;
+}
+
+/********************* Cards Area *********************/
+
+.cardsArea {
+  margin-top: 10px;
+}
+
+/********************* Cards *********************/
+
+.cardChampionName {
+  margin-right: 10px;
+}
+
+.cardChampionTagGroup {
+  margin-top: -2px;
+}
+
+.cardSubTitle {
+  color: rgb(95, 95, 95);
+}
+
+/********************* Modal *********************/
+
+.lore {
+  font-size: small;
+}
+
+.splashTextAlpha {
+  background-color: rgba(0, 0, 0, 0.418);
+}

@@ -1,0 +1,118 @@
+
+Component template:
+import React from "react";
+
+function App() {
+  return <></>;
+}
+
+export default App;
+
+
+
+
+Cards:
+
+Card component from bootstrap
+
+On top splash image: 
+Address for splash image for one hero, http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg   
+    Aatrox has to be changed out of the address to loop the address for every hero. You can do it by breaking the address up.
+
+Name right under splash image to the left:
+Address for names: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion.json
+    data["data"][parameter]["name"];
+    parameter has to be changed out
+
+Badges beside the name to the right:
+Address for the badges: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion.json
+    data.data[parameter].tags[i];
+    parameter has to be changed out in a loop and also i needs to be looped (nested)
+
+Title under name:
+Address for title: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion.json
+    data["data"][parameter]["title"];
+    parameter has to be changed out
+
+Difficulty under title:
+Address for difficulty: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion/Aatrox.json
+    data["data"][parameter]["info"]["difficulty"];
+    parameter has to be changed out
+    display difficulty with the text; easy 1-3, average 4-6, hard 7-8, severe 9-10
+    if(data["data"][parameter]["info"]["difficulty"] < 4 ){
+        let difficultyEasy = "Easy";
+    }
+    if(data["data"][parameter]["info"]["difficulty"] > 3  && data["data"][parameter]["info"]["difficulty"] < 7){
+        let difficultyAverage = "Average";
+    }
+    if(data["data"][parameter]["info"]["difficulty"] > 6 && data["data"][parameter]["info"]["difficulty"] < 9){
+        let difficultyHard = "Hard";
+    }
+    if(data["data"][parameter]["info"]["difficulty"] > 8){
+        let difficultySevere = "Severe";
+    }
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Modal:
+
+Modal component from bootstrap
+
+Carousel in the top. It should fill out 2/3 of the modal space:
+    Display all the skins in the carousel with the splash images
+Address for the skin splash images: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion/Aatrox.json
+    data.data[parameter].skins[i].num;
+    parameter has to be changed out in a loop and also i needs to be looped (nested)
+    Address for splash image for one hero, http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg 
+    Aatrox and the 0 has to be changed out of the address to loop the address for every hero. You can do it by breaking the address up.
+        const champSplashAddressPrefix = "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/"
+        const champSplashAddressSuffix = ".jpg"
+        {`${champSplashAddressPrefix}${CHAMPNAME}${NUM}${champSplashAddressSuffix}`}
+
+Skin name in the top mid of carousel:
+Address to skin name: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion/Aatrox.json
+    Aatrox has to be changed out of the address to loop the address for every hero. You can do it by breaking the address up.
+    data.data[parameter].skins[i].name;
+    parameter has to be changed out in a loop and also i needs to be looped (nested)
+
+Lore in the right corner of carousel on ONLY the first image:
+Address for the lore: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion/Aatrox.json
+    Aatrox has to be changed out of the address to loop the address for every hero. You can do it by breaking the address up.
+    data.data[parameter].lore;
+    parameter has to be changed out in a loop
+
+Champion name under carousel to the left:
+Address for names: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion.json
+    data["data"][parameter]["name"];
+    parameter has to be changed out
+
+Badges beside the name to the right:
+Address for the badges: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion.json
+    data.data[parameter].tags[i];
+    parameter has to be changed out in a loop and also i needs to be looped (nested)
+
+Ally tips under champion name:
+Address for ally tips: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion/Aatrox.json
+    Aatrox has to be changed out of the address to loop the address for every hero. You can do it by breaking the address up.
+    data.data[parameter].allytips[i];
+    print it out in a <ul></ul>
+
+Enemy tips under ally tips:
+Address for ally tips: http://ddragon.leagueoflegends.com/cdn/10.13.1/data/en_US/champion/Aatrox.json
+    Aatrox has to be changed out of the address to loop the address for every hero. You can do it by breaking the address up.
+    data.data[parameter].enemytips[i];
+    print it out in a <ul></ul>
+
+    ------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Future fixes:
+
+ Header badges:
+    *fix filter tag for free rotation (needs server)
+
+Koppla till server
+
+Project has maybe memory leak if you click the badges to fast! Gives a warning
