@@ -8,7 +8,7 @@ import Lore from "./lore";
 function ChampionModal(props) {
   const [individualChampionInfo, setIndividualChampionInfo] = useState();
   const individualChampionAddressPrefix =
-    "http://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/champion/";
+    "https://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/champion/";
   const individualChampionAddressSuffix = ".json";
 
   //fetching part
@@ -39,7 +39,7 @@ function ChampionModal(props) {
   //Skin splash
 
   const champSplashAddressPrefix =
-    "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
+    "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
   const champSplashAddressUnderscore = "_";
   const champSplashAddressSuffix = ".jpg";
 

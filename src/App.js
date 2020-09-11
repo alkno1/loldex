@@ -12,7 +12,7 @@ function App() {
   //fetching part
   useEffect(() => {
     fetch(
-      `http://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/champion.json`
+      `https://ddragon.leagueoflegends.com/cdn/10.16.1/data/en_US/champion.json`
     )
       .then((response) => response.json())
       .then((data) => {

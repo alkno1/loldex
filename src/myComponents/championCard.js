@@ -9,7 +9,7 @@ function ChampionCard(props) {
   const handleClose = () => setModalShow(false);
 
   const champSplashAddressPrefix =
-    "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
+    "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/";
   const champSplashAddressSuffix = "_0.jpg";
 
   return (
