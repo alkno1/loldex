@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/loldex/static/css/main.749f7275.chunk.css",
-    "main.js": "/loldex/static/js/main.2af8576a.chunk.js",
-    "main.js.map": "/loldex/static/js/main.2af8576a.chunk.js.map",
+    "main.js": "/loldex/static/js/main.a31dd65c.chunk.js",
+    "main.js.map": "/loldex/static/js/main.a31dd65c.chunk.js.map",
     "runtime-main.js": "/loldex/static/js/runtime-main.8bf0293e.js",
     "runtime-main.js.map": "/loldex/static/js/runtime-main.8bf0293e.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/loldex/static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.97a65e4d.chunk.js": "/loldex/static/js/2.97a65e4d.chunk.js",
     "static/js/2.97a65e4d.chunk.js.map": "/loldex/static/js/2.97a65e4d.chunk.js.map",
     "index.html": "/loldex/index.html",
-    "precache-manifest.a0a0a8687170d57562ed1d7eea82c1b3.js": "/loldex/precache-manifest.a0a0a8687170d57562ed1d7eea82c1b3.js",
+    "precache-manifest.1026f2d47f8e187073fca2f589f5301b.js": "/loldex/precache-manifest.1026f2d47f8e187073fca2f589f5301b.js",
     "service-worker.js": "/loldex/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/loldex/static/css/2.8aa5a7f8.chunk.css.map",
     "static/css/main.749f7275.chunk.css.map": "/loldex/static/css/main.749f7275.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.97a65e4d.chunk.js",
     "static/css/main.749f7275.chunk.css",
-    "static/js/main.2af8576a.chunk.js"
+    "static/js/main.a31dd65c.chunk.js"
   ]
 }
