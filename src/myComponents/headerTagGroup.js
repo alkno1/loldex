@@ -83,7 +83,7 @@ function HeaderTagGroup(props) {
           break;
       }
 
-      //Update our state
+      //Update the state
       setBadgeState(newState);
     },
     [setBadgeState, props]
